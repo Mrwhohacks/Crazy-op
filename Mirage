@@ -1,0 +1,154 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "MRWHOHACKS", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+OrionLib:MakeNotification({
+	Name = "SUBSCRIBE TO MRWHOHACKS",
+	Content = " Made by MRWHOHACKS??",
+	Image = "rbxassetid://7742274679",
+	Time = 10
+})
+
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "auto shove",
+	Callback = function()
+      		while true do
+local args = {
+    [1] = {
+        ["Action"] = "Shove"
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.LineRemote:FireServer(unpack(args))
+wait()
+end
+  	end    
+})
+
+Tab:AddParagraph("gift","Free gift")
+
+Tab:AddButton({
+	Name = "gift 1",
+	Callback = function()
+      		local args = {
+    [1] = {
+        ["Action"] = "ClaimPlayTimeReward",
+        ["Index"] = 1
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.ClaimReward:FireServer(unpack(args))
+
+  	end    
+})
+
+Tab:AddButton({
+	Name = "gift 2",
+	Callback = function()
+      		local args = {
+    [1] = {
+        ["Action"] = "ClaimPlayTimeReward",
+        ["Index"] = 2
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.ClaimReward:FireServer(unpack(args))
+
+  	end    
+})
+
+Tab:AddButton({
+	Name = "gift 3",
+	Callback = function()
+      		local args = {
+    [1] = {
+        ["Action"] = "ClaimPlayTimeReward",
+        ["Index"] = 3
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.ClaimReward:FireServer(unpack(args))
+
+  	end    
+})
+
+Tab:AddButton({
+	Name = "gift 4",
+	Callback = function()
+      		local args = {
+    [1] = {
+        ["Action"] = "ClaimPlayTimeReward",
+        ["Index"] = 4
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.ClaimReward:FireServer(unpack(args))
+
+  	end    
+})
+
+Tab:AddButton({
+	Name = "gift 5",
+	Callback = function()
+      		local args = {
+    [1] = {
+        ["Action"] = "ClaimPlayTimeReward",
+        ["Index"] = 5
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.ClaimReward:FireServer(unpack(args))
+
+  	end    
+})
+
+Tab:AddButton({
+	Name = "gift 6",
+	Callback = function()
+      		local args = {
+    [1] = {
+        ["Action"] = "ClaimPlayTimeReward",
+        ["Index"] = 6
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.ClaimReward:FireServer(unpack(args))
+
+  	end    
+})
+
+Tab:AddButton({
+	Name = "gift 7",
+	Callback = function()
+      		   		local args = {
+    [1] = {
+        ["Action"] = "ClaimPlayTimeReward",
+        ["Index"] = 7
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.ClaimReward:FireServer(unpack(args))
+
+  	end    
+})
+ 
+Tab:AddButton({
+	Name = "gift 8",
+	Callback = function()
+      		local args = {
+    [1] = {
+        ["Action"] = "ClaimPlayTimeReward",
+        ["Index"] = 8
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.ClaimReward:FireServer(unpack(args))
+
+  	end    
+})
