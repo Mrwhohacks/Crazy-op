@@ -36,6 +36,9 @@ Tab:AddButton({
 
 game:GetService("ReplicatedStorage").Events.ClientToServer.updateTopDistanceEvent:FireServer(unpack(args))
 
+  	end    
+})
+
 Tab:AddButton({
 	Name = "inf boosters",
 	Callback = function()
