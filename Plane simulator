@@ -1,0 +1,51 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "MRWHOHACKS", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+OrionLib:MakeNotification({
+	Name = "Subscribe To mrwhohacks",
+	Content = "MADE BY MRWHOHACKS",
+	Image = "rbxassetid://4483345998",
+	Time = 15
+})
+
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "inf money",
+	Callback = function()
+      		local args = {
+    [1] = 1000000000000000000
+}
+
+game:GetService("ReplicatedStorage").Events.ClientToServer.addCloudCoinEvent:FireServer(unpack(args))
+
+  	end    
+})
+
+Tab:AddButton({
+	Name = "inf distance",
+	Callback = function()
+      		local args = {
+    [1] = 1000000000000000000
+}
+
+game:GetService("ReplicatedStorage").Events.ClientToServer.updateTopDistanceEvent:FireServer(unpack(args))
+
+Tab:AddButton({
+	Name = "inf boosters",
+	Callback = function()
+      		local args = {
+    [1] = 1000000000,
+    [2] = 1000000000,
+    [3] = 1000000000
+}
+
+game:GetService("ReplicatedStorage").Events.ClientToServer.updateBoosterTimerEvent:FireServer(unpack(args))
+
+  	end    
+})
