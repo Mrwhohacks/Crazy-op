@@ -1,0 +1,84 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "MRWHOHACKS", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+OrionLib:MakeNotification({
+	Name = "Subscribe To mrwhohacks",
+	Content = "MADE BY MRWHOHACKS",
+	Image = "rbxassetid://4483345998",
+	Time = 15
+})
+
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "First 1",
+	Callback = function()
+      		_G.enabled = true
+
+while _G.enabled == true do
+local args = {
+    [1] = false
+}
+
+game:GetService("ReplicatedStorage").Remotes.CanTrain:FireServer(unpack(args))
+wait(2)
+end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Second 2",
+	Callback = function()
+      		_G.enabled = true
+
+while _G.enabled == true do
+local args = {
+    [1] = workspace.Npcs.CEO
+}
+
+game:GetService("ReplicatedStorage").Remotes.Exemplar:FireServer(unpack(args))
+wait(3)
+end
+ 	end    
+})
+
+Tab:AddButton({
+	Name = "Third 3",
+	Callback = function()
+      		_G.enabled = true
+
+while _G.enabled == true do
+game:GetService("ReplicatedStorage").Remotes.RewardFromFight:FireServer()
+wait(5)
+end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "off",
+	Callback = function()
+      		_G.enabled = false
+
+while _G.enabled == true do
+game:GetService("ReplicatedStorage").Remotes.RewardFromFight:FireServer()
+wait()
+end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Autoclicker",
+	Callback = function()
+      		_G.enabled = true
+
+while _G.enabled == true do
+game:GetService("ReplicatedStorage").Remotes.Training:FireServer()
+wait()
+end
+  	end    
+})
